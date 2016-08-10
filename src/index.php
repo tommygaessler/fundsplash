@@ -34,6 +34,8 @@
 
           <!-- <p class="totalLikes">Total Likes: <span id="totalLikes">1,000</span></p> -->
 
+          <h4 class="percentage"><span id="percentage"></span>% completed</h4>
+
           <h3 class="progressText">$<span id="progressText"><?php echo $balance; ?></span> of $<span id="progressGoal"></span></h3>
 
           <progress id="progress" value="<?php echo $balance; ?>" max=""></progress>

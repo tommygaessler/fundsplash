@@ -16,7 +16,14 @@ var progress = Math.random() * (GOAL - 0) + 0;
 
 document.getElementById('progress').max = GOAL;
 
-var progressNumber = parseFloat($('#progressText').text()).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+var progressNumber = parseFloat($('#progressText').text()).toFixed(2);
+
+var percentage = progressNumber / GOAL * 100;
+percentage = Math.floor(percentage);
+
+$('#percentage').text(percentage);
+
+progressNumber = progressNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
 $('#progressText').text(progressNumber);
 
@@ -30,11 +37,14 @@ function auto_load() {
     cache: false,
     success: function(data) {
       $('#progress').val(data);
+      $('#percentage').text(Math.floor((data / GOAL * 100)));
 
       data = parseFloat(data).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
       console.log(data);
 
       $('#progressText').text(data);
+
+
     }
   });
 }
