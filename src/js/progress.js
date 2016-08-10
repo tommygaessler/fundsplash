@@ -2,8 +2,6 @@ $(document).on('ready', function() {
 
 });
 
-// progress bar
-
 // random goal
 const GOAL = Math.random() * (5000 - 500) + 500;
 
