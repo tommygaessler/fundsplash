@@ -1,3 +1,7 @@
+// var whatever = 10;
+// attached to global scope
+
+
 $(document).on('ready', function() {
 
 });
@@ -41,7 +45,6 @@ function auto_load() {
       console.log(data);
 
       $('#progressText').text(data);
-
 
     }
   });
