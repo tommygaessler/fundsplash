@@ -3,7 +3,7 @@
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var jscs = require('gulp-jscs');
-var connect = require('gulp-connect');
+var connect = require('gulp-connect-php');
 var runSequence = require('run-sequence');
 
 
@@ -11,7 +11,7 @@ var runSequence = require('run-sequence');
 
 gulp.task('connect', function () {
   connect.server({
-    root: './src/',
+    base: './src/',
     port: 8888,
     livereload: true
   });

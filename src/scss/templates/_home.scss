@@ -1,0 +1,59 @@
+.row {
+  margin-bottom: 30px;
+}
+
+.profilepicture {
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+
+.photos {
+  .third {
+    img {
+      width: 100%;
+      margin-bottom: ($grid-gutter * 3);
+    }
+  }
+}
+
+.name {
+  text-align: center;
+}
+
+.username {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.location {
+  text-align: center;
+}
+
+.space {
+
+  .progressText {
+    margin-top: 151px;
+    text-align: center;
+  }
+
+  .destination {
+    margin-top: 151px;
+  }
+}
+
+.downloads {
+  text-align: center;
+}
+
+.stripe-button-el {
+  display: block !important;
+  margin: auto;
+  margin-top: 25px;
+}
+
+progress {
+  width: 100%;
+}

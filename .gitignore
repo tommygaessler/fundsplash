@@ -1,5 +1,11 @@
 node_modules/
 .DS_Store
 .jscsrc
+.jshintrc
 gulpfile.js
 package.json
+vendor/
+composer.json
+composer.lock
+config.codekit
+config.php
