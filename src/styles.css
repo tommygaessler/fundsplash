@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -204,49 +206,167 @@ th {
       width: 100% !important;
       margin-right: 0; } }
 
+* {
+  box-sizing: border-box; }
+
 .googlemap {
   width: 100%; }
 
 .formSending {
   display: none; }
 
-.row {
-  margin-bottom: 30px; }
+p {
+  font-family: "Inconsolata";
+  font-size: 17px; }
 
-.profilepicture {
-  border-radius: 50%;
-  margin: auto;
-  display: block; }
+a {
+  color: #999;
+  text-decoration: underline; }
+  a:hover {
+    color: black; }
 
-.photos .third img {
-  width: 100%;
-  margin-bottom: 6%; }
+header {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+  header .logo {
+    text-align: center;
+    position: relative; }
+    header .logo img {
+      width: 37px;
+      vertical-align: bottom; }
+    header .logo .profilepicture {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 50%; }
+    header .logo h2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0; }
+      header .logo h2 a {
+        color: black;
+        text-decoration: none; }
 
-.name {
-  text-align: center; }
+.startWrapper {
+  width: 85%;
+  max-width: 800px;
+  margin: 0 auto; }
+  .startWrapper .start {
+    position: relative;
+    top: 162px; }
+    .startWrapper .start h1 {
+      text-align: center;
+      font-size: 46px; }
+    .startWrapper .start p {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #999; }
+    .startWrapper .start .startbutton {
+      border: 2px solid black;
+      padding: 20px;
+      background-color: white;
+      margin: auto;
+      display: block; }
+      .startWrapper .start .startbutton:hover {
+        background-color: black;
+        color: white; }
+  .startWrapper .loader {
+    display: none;
+    position: relative;
+    top: 162px; }
+    .startWrapper .loader h1 {
+      text-align: center;
+      font-size: 46px; }
 
-.username {
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 10px; }
-
-.location {
-  text-align: center; }
-
-.space .progressText {
-  margin-top: 151px;
-  text-align: center; }
-.space .destination {
-  margin-top: 151px; }
-
-.downloads {
-  text-align: center; }
-
-.stripe-button-el {
-  display: block !important;
-  margin: auto;
-  margin-top: 25px; }
-
-progress {
-  width: 100%; }
+main {
+  display: none;
+  position: relative;
+  top: 70px; }
+  main .wrapper {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto; }
+    main .wrapper .row {
+      margin-bottom: 30px; }
+    main .wrapper .profilepicture {
+      border-radius: 50%;
+      margin: auto;
+      display: block; }
+    main .wrapper .countdown {
+      text-align: center; }
+    main .wrapper .photos {
+      padding-top: 30px; }
+      main .wrapper .photos .third img {
+        width: 100%;
+        margin-bottom: 6%; }
+    main .wrapper .name {
+      text-align: center;
+      margin-top: 40px; }
+    main .wrapper .username {
+      text-align: center;
+      display: block;
+      margin-bottom: 10px; }
+    main .wrapper .location {
+      text-align: center; }
+    main .wrapper .bio {
+      margin-bottom: 0; }
+    main .wrapper .space .progressText {
+      margin-top: 30px;
+      text-align: center; }
+    main .wrapper .space .percentage {
+      margin: 0;
+      text-align: center; }
+      main .wrapper .space .percentage #percentage {
+        font-size: 100px;
+        display: block; }
+    main .wrapper .space .map-toggle {
+      margin-top: 171px; }
+    main .wrapper .downloads {
+      text-align: center; }
+    main .wrapper .stripe-button-el {
+      display: block !important;
+      margin: auto;
+      margin-top: 25px; }
+    main .wrapper progress {
+      width: 100%; }
+    main .wrapper a.map-toggle {
+      display: block;
+      position: relative;
+      font-size: 1.17em;
+      width: 100%;
+      letter-spacing: 2px;
+      font-weight: bold;
+      font-family: sans-serif; }
+    main .wrapper .arrow:after {
+      display: block;
+      position: absolute;
+      margin-left: -50px;
+      top: 88px;
+      left: 50%;
+      content: "";
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      z-index: 999; }
+  main .nextLink {
+    color: black;
+    text-decoration: none; }
+    main .nextLink .next {
+      border: 2px solid black;
+      padding: 20px;
+      background-color: white;
+      margin: auto;
+      display: block;
+      margin-bottom: 30px; }
+      main .nextLink .next:hover {
+        background-color: black;
+        color: white; }
+  main #map {
+    width: 100%;
+    height: 250px; }

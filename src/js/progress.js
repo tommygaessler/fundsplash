@@ -21,13 +21,13 @@ var progressNumber = parseFloat($('#progressText').text()).toFixed(2);
 var percentage = progressNumber / GOAL * 100;
 percentage = Math.floor(percentage);
 
-$('#percentage').text(percentage);
+$('#percentage').text(percentage + '%');
 
-progressNumber = progressNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+progressNumber = progressNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
 $('#progressText').text(progressNumber);
 
-$('#progressGoal').text(GOAL.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+$('#progressGoal').text(GOAL.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
 
 console.log('goal', Math.round(GOAL));
 
@@ -37,13 +37,12 @@ function auto_load() {
     cache: false,
     success: function(data) {
       $('#progress').val(data);
-      $('#percentage').text(Math.floor((data / GOAL * 100)));
+      $('#percentage').text(Math.floor((data / GOAL * 100)) + '%');
 
-      data = parseFloat(data).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      data = parseFloat(data).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
       console.log(data);
 
       $('#progressText').text(data);
-
 
     }
   });

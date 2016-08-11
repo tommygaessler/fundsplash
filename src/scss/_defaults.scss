@@ -1,7 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+* {
+  box-sizing: border-box;
+}
+
 .googlemap {
   width: 100%;
 }
 
 .formSending {
   display: none;
+}
+
+p {
+  font-family: 'Inconsolata', ;
+  font-size: 17px;
+}
+
+a {
+  color: #999;
+  text-decoration: underline;
+
+  &:hover {
+    color: black;
+  }
 }
