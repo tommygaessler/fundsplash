@@ -39,9 +39,19 @@
     position: relative;
     top: 162px;
 
-    h1 {
-      text-align: center;
-      font-size: 46px;
+    @-webkit-keyframes typing { from { width: 0; } }
+    @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+    .loading {
+    	font: bold 300% Consolas, Monaco, monospace;
+    	border-right: .1em solid black;
+    	width: 16.5em;
+    	width: 24ch;
+    	margin: 2em 1em;
+    	white-space: nowrap;
+    	overflow: hidden;
+    	-webkit-animation: typing 2s steps(24, end),
+    	           blink-caret .5s step-end infinite alternate;
     }
   }
 }

@@ -6,7 +6,7 @@
         <button class="startbutton" id="start">Browse Campaigns</button>
       </div>
       <div class="loader">
-        <h1>loading</h1>
+        <h1 class="loading">Loading Next Campaign...</h1>
       </div>
     </div>
     <main>
@@ -27,7 +27,7 @@
 
             <p class="bio">Bio: <span id="bio">Shoreditch mixtape literally you probably haven't heard of them beard, narwhal vinyl. Raw denim mlkshk freegan synth, vice bushwick pug bespoke. Chartreuse tacos vinyl, authentic normcore pour-over cardigan bitters flexitarian pop-up.</span></p>
           </div>
-          <div class="column third space">
+          <div class="column third space payment">
             <?php require_once('./config.php'); ?>
             <?php
               ob_start();
@@ -45,16 +45,7 @@
 
             <p class="countdown"><span id="countdown" class="timer"></span></p>
 
-            <form id="target" action="charge.php" method="post" target="formSending">
-              <script src="https://checkout.stripe.com/checkout.js"
-                class="stripe-button"
-                data-key="<?php echo $stripe['publishable_key']; ?>"
-                data-description="Stripe Testing"
-                data-amount="50000"
-                data-image=""
-                data-locale="auto">
-              </script>
-            </form>
+            <!-- <form id="target" action="charge.php" method="post" target="formSending"><script src="https://checkout.stripe.com/checkout.js"  class="stripe-button"  data-key="<?php echo $stripe["publishable_key"]; ?>"  data-description="Fundplash"  data-amount="50000"  data-image="images/logo.png"  data-locale="auto"></script></form> -->
 
             <iframe class="formSending" name="formSending"></iframe>
           </div>

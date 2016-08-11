@@ -8,8 +8,8 @@ $(document).on('ready', function () {
   $('#next').on('click', function () {
     $('main').css('display', 'none');
     $('.loader').css('display', 'block');
-    var promise = Promise.resolve(unsplashLoad());
-    promise.then(function() {
+    unsplashLoad()
+    .then(function() {
       $('.loader').css('display', 'none');
       $('main').css('display', 'block');
     });

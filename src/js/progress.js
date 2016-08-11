@@ -1,5 +1,8 @@
 $(document).on('ready', function() {
-
+  
+  $('.payment').on('click', '.stripe-button-el', function () {
+    var interval = setInterval(auto_load, 1000);
+  });
 });
 
 // progress bar
@@ -47,11 +50,3 @@ function auto_load() {
     }
   });
 }
-
-$('.stripe-button-el').on('click', function () {
-  var interval = setInterval(auto_load, 1000);
-});
-
-$('#target').submit(function () {
-  console.log('submitted');
-});

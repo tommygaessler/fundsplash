@@ -38,5 +38,3 @@ var place = locations[Math.floor(randomLocation)];
 $('.marker').attr({'data-lat': place.lat, 'data-lng': place.long});
 
 $('#place').text(place.place);
-
-console.log(place.place);
