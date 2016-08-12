@@ -1,10 +1,9 @@
-$(document).on('ready', function() {
-
-  // unsplashLoad ();
-});
-
-// unsplash random user profile
-
+// $(document).on('ready', function() {
+//   unsplashLoad();
+// });
+//
+// // unsplash random user profile
+//
 // const CLIENT_ID = 'client_id=3500c188f8334662d427d07186a12a9ed4b32e0d30c08c85487bc8a20120f107';
 //
 // function unsplashLoad () {
@@ -53,8 +52,8 @@ $(document).on('ready', function() {
 //         var profilepicture = data.profile_image.large;
 //         $('#profilepicture').attr('src', profilepicture);
 //
-//         console.log(place);
-//         console.log(locations);
+//         // console.log(place);
+//         // console.log(locations);
 //
 //         $('<form id="target" action="charge.php" method="post" target="formSending"><script src="https://checkout.stripe.com/checkout.js"  class="stripe-button"  data-key="pk_test_azE802fthc69BcEpUKGLJx6W" data-name="' + name + '&#39;s' + '" data-description="trip to ' + place.place +'"  data-amount="50000"  data-image="'+ profilepicture +'" data-locale="auto"></script></form>').insertBefore('.formSending');
 //
@@ -68,7 +67,7 @@ $(document).on('ready', function() {
 //
 //           for (var i = 0; i < 6; i++) {
 //             console.log(data[i].urls.raw);
-//             $('.photos #photo' + [i]).attr('src', data[i].urls.raw);
+//             $('.photos #photo' + [i]).attr('src', data[i].urls.regular);
 //             counter ++;
 //             resolve();
 //           }

@@ -261,6 +261,14 @@ header {
   .startWrapper .start {
     position: relative;
     top: 162px; }
+    .startWrapper .start .credits {
+      position: fixed;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      margin: auto; }
+      .startWrapper .start .credits .fa-heart-o {
+        color: #d12c34; }
     .startWrapper .start h1 {
       text-align: center;
       font-size: 46px; }
@@ -291,11 +299,11 @@ header {
       font: bold 300% Consolas, Monaco, monospace;
       border-right: .1em solid black;
       width: 16.5em;
-      width: 24ch;
+      width: 25ch;
       margin: 2em 1em;
       white-space: nowrap;
       overflow: hidden;
-      -webkit-animation: typing 2s steps(24, end), blink-caret 0.5s step-end infinite alternate; }
+      -webkit-animation: typing 2s steps(25, end), blink-caret 0.5s step-end infinite alternate; }
 
 main {
   display: none;
@@ -375,7 +383,7 @@ main {
       background-color: white;
       margin: auto;
       display: block;
-      margin-bottom: 30px; }
+      margin-bottom: 4%; }
       main .nextLink .next:hover {
         background-color: black;
         color: white; }

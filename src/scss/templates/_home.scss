@@ -9,6 +9,18 @@
     position: relative;
     top: 162px;
 
+    .credits {
+      position: fixed;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      margin: auto;
+
+      .fa-heart-o {
+        color: #d12c34;
+      }
+    }
+
     h1 {
       text-align: center;
       font-size: 46px;
@@ -46,11 +58,11 @@
     	font: bold 300% Consolas, Monaco, monospace;
     	border-right: .1em solid black;
     	width: 16.5em;
-    	width: 24ch;
+    	width: 25ch;
     	margin: 2em 1em;
     	white-space: nowrap;
     	overflow: hidden;
-    	-webkit-animation: typing 2s steps(24, end),
+    	-webkit-animation: typing 2s steps(25, end),
     	           blink-caret .5s step-end infinite alternate;
     }
   }
@@ -182,7 +194,7 @@ main {
       background-color: white;
       margin: auto;
       display: block;
-      margin-bottom: 30px;
+      margin-bottom: ($grid-gutter * 2);
 
       &:hover {
         background-color: black;

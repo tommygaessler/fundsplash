@@ -6,6 +6,7 @@ $(document).on('ready', function () {
   });
 
   $('#next').on('click', function () {
+    $('#target').remove();
     $('main').css('display', 'none');
     $('.loader').css('display', 'block');
     unsplashLoad()

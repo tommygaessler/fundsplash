@@ -2,11 +2,12 @@
     <div class="startWrapper">
       <div class="start">
         <h1>Fundsplash</h1>
-        <p>Fundsplash is a crowdfunding website where Unsplash photographers can raise money for their next adventure!</p>
+        <p>Fundsplash is a crowdfunding website where <a href="http://unsplash.com" target="_blank">Unsplash</a> photographers can raise money for their next adventure!</p>
         <button class="startbutton" id="start">Browse Campaigns</button>
+        <p class="credits">Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="http://tommygaessler.com" target="_blank">Tommy Gaessler</a>,<br>using the <a href="http://unsplash.com" target="_blank">Unsplash</a> and <a href="http://stripe.com/" target="_blank">Stripe</a> API's</p>
       </div>
       <div class="loader">
-        <h1 class="loading">Loading Next Campaign...</h1>
+        <h1 class="loading">Loading Next Campaign... </h1>
       </div>
     </div>
     <main>
