@@ -30,7 +30,7 @@ $('html, body').on('click', function(e) {
 // empty #map
 // re-run establishMap
 
-jQuery(document).ready(function($) {
+function initializeMap ($) {
   /*
    *  render_map
    *
@@ -103,7 +103,6 @@ jQuery(document).ready(function($) {
    */
 
   function add_marker($marker, map) {
-
     // var
     var latlng = new google.maps.LatLng($marker.attr('data-lat'), $marker.attr('data-lng'));
 
@@ -150,7 +149,6 @@ jQuery(document).ready(function($) {
 
     // vars
     var bounds = new google.maps.LatLngBounds();
-
     // loop through all markers and create bounds
     $.each(map.markers, function(i, marker) {
 
@@ -196,8 +194,9 @@ jQuery(document).ready(function($) {
     $('#map').each(function() {
 
       render_map($(this));
-
     });
 
   });
-});
+}
+
+jQuery(document).ready(initializeMap);

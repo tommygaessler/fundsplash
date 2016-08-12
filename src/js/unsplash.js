@@ -1,12 +1,12 @@
 $(document).on('ready', function() {
-  unsplashLoad();
+  unsplashLoad(newLocation);
 });
 
 // unsplash random user profile
 
-const CLIENT_ID = 'client_id=3500c188f8334662d427d07186a12a9ed4b32e0d30c08c85487bc8a20120f107';
+const CLIENT_ID = 'client_id=dc1caa1ab25c52ed98d69b4f505456c45fbac2deacfef3a61c02df1841bcccce';
 
-function unsplashLoad () {
+function unsplashLoad (newLocation) {
   return new Promise(function(resolve, reject) {
 
     for (var j = 0; j < 6; j++) {
@@ -56,7 +56,7 @@ function unsplashLoad () {
         // console.log(place);
         // console.log(locations);
 
-        $('<form id="target" action="charge.php" method="post" target="formSending"><script src="https://checkout.stripe.com/checkout.js"  class="stripe-button"  data-key="pk_test_azE802fthc69BcEpUKGLJx6W" data-name="' + name + '&#39;s' + '" data-description="trip to ' + locationReset().place +'"  data-amount="50000"  data-image="'+ profilepicture +'" data-locale="auto"></script></form>').insertBefore('.formSending');
+        $('<form id="target" action="charge.php" method="post" target="formSending"><script src="https://checkout.stripe.com/checkout.js"  class="stripe-button"  data-key="pk_test_azE802fthc69BcEpUKGLJx6W" data-name="' + name + '&#39;s' + '" data-description="trip to ' + newLocation.place +'"  data-amount="50000"  data-image="'+ profilepicture +'" data-locale="auto" data-label="Contribute to Campaign"></script></form>').insertBefore('.formSending');
 
         $.ajax({
           method: 'GET',

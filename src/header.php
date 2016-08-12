@@ -19,19 +19,19 @@
     <!-- Twitter Cards -->
 
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://fundsplash.com/images/fundsplashcard.png">
     <meta name="twitter:site" content="@tommygaessler">
     <meta name="twitter:title" content="Fundsplash - Beta">
     <meta name="twitter:description" content="Fundsplash is a crowdfunding website where Unsplash photographers can raise money for their next adventure!">
-    <meta name="twitter:image" content="images/fundsplashcard.png">
 
     <!-- OpenGraph -->
 
     <meta property="fb:app_id" content="1356967117665542" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://fundsplash.com" />
     <meta property="og:title" content="Fundsplash - Beta" />
     <meta property="og:description" content="Fundsplash is a crowdfunding website where Unsplash photographers can raise money for their next adventure!" />
-    <meta property="og:image" content="images/fundsplashcard.png" />
-    <meta property="og:type" content="article" />
-    <meta property="article:author" content="Tommy Gaessler" />
+    <meta property="og:image" content="http://fundsplash.com/images/fundsplashcard.png" />
     <meta property="og:site_name" content="fundsplash.com" />
   </head>
   <body>

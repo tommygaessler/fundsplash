@@ -1,10 +1,9 @@
 $(document).on('ready', function() {
-  locationReset();
 });
 
 // random location
 
-var locations = [{
+var allLocations = [{
   place: 'Machu Picu, Peru',
   lat: '-13.162880',
   long: '-72.544931'
@@ -31,8 +30,7 @@ var locations = [{
 }
 ];
 
-function locationReset() {
-
+function setLatLng (locations) {
   var randomLocation = Math.random() * (locations.length - 0) + 0;
 
   var place = locations[Math.floor(randomLocation)];
@@ -42,5 +40,7 @@ function locationReset() {
   $('#place').text(place.place);
 
   return place;
-
 }
+
+window.newLocation = setLatLng(allLocations);
+// declares global varible

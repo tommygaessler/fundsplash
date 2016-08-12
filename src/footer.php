@@ -2,8 +2,10 @@
 
     </footer>
     <!-- Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA55ffaQ1IVB7Th8aKlEfWGOmscYBplLuA"
-    async defer></script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyA55ffaQ1IVB7Th8aKlEfWGOmscYBplLuA">
+
+    </script>
     <!-- Stripe -->
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <!-- jQuery -->

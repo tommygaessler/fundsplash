@@ -41,7 +41,6 @@ function auto_load() {
       $('#percentage').text(Math.floor((data / GOAL * 100)) + '%');
 
       data = parseFloat(data).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-      console.log(data);
 
       $('#progressText').text(data);
 
