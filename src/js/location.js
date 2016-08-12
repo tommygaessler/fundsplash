@@ -1,5 +1,5 @@
 $(document).on('ready', function() {
-  console.log('test');
+  locationReset();
 });
 
 // random location
@@ -31,10 +31,16 @@ var locations = [{
 }
 ];
 
-var randomLocation = Math.random() * (locations.length - 0) + 0;
+function locationReset() {
 
-var place = locations[Math.floor(randomLocation)];
+  var randomLocation = Math.random() * (locations.length - 0) + 0;
 
-$('.marker').attr({'data-lat': place.lat, 'data-lng': place.long});
+  var place = locations[Math.floor(randomLocation)];
 
-$('#place').text(place.place);
+  $('.marker').attr({'data-lat': place.lat, 'data-lng': place.long});
+
+  $('#place').text(place.place);
+
+  return place;
+
+}

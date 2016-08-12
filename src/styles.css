@@ -237,19 +237,35 @@ header {
   header .logo {
     text-align: center;
     position: relative; }
-    header .logo img {
+    header .logo img:not(.profilepicture) {
       width: 37px;
       vertical-align: bottom; }
+      @media (max-width: 400px) {
+        header .logo img:not(.profilepicture) {
+          position: absolute;
+          top: 0;
+          left: 23px; } }
+    @media (max-width: 400px) {
+      header .logo .fa-usd {
+        position: absolute;
+        top: 0;
+        left: 0; } }
     header .logo .profilepicture {
       position: absolute;
       top: 0;
       right: 0;
-      border-radius: 50%; }
+      border-radius: 50%;
+      width: 37px;
+      vertical-align: bottom; }
     header .logo h2 {
       position: absolute;
       top: 0;
       left: 0;
       margin: 0; }
+      @media (max-width: 400px) {
+        header .logo h2 {
+          text-align: center;
+          position: relative; } }
       header .logo h2 a {
         color: black;
         text-decoration: none; }
@@ -285,6 +301,9 @@ header {
       .startWrapper .start .startbutton:hover {
         background-color: black;
         color: white; }
+    @media (max-width: 400px) {
+      .startWrapper .start {
+        top: 100px; } }
   .startWrapper .loader {
     display: none;
     position: relative;
@@ -304,6 +323,18 @@ header {
       white-space: nowrap;
       overflow: hidden;
       -webkit-animation: typing 2s steps(25, end), blink-caret 0.5s step-end infinite alternate; }
+      .startWrapper .loader .loading .show {
+        display: none; }
+      @media (max-width: 800px) {
+        .startWrapper .loader .loading {
+          white-space: nowrap;
+          width: 11ch;
+          margin-left: 5px;
+          -webkit-animation: typing 2s steps(11, end), blink-caret 0.5s step-end infinite alternate; }
+          .startWrapper .loader .loading .hide {
+            display: none; }
+          .startWrapper .loader .loading .show {
+            display: inline; } }
 
 main {
   display: none;
@@ -343,11 +374,17 @@ main {
     main .wrapper .space .percentage {
       margin: 0;
       text-align: center; }
+      @media (max-width: 800px) {
+        main .wrapper .space .percentage {
+          margin-top: 50px; } }
       main .wrapper .space .percentage #percentage {
         font-size: 100px;
         display: block; }
     main .wrapper .space .map-toggle {
       margin-top: 171px; }
+      @media (max-width: 800px) {
+        main .wrapper .space .map-toggle {
+          margin-top: 50px; } }
     main .wrapper .downloads {
       text-align: center; }
     main .wrapper .stripe-button-el {
@@ -384,9 +421,19 @@ main {
       margin: auto;
       display: block;
       margin-bottom: 4%; }
+      @media (max-width: 800px) {
+        main .nextLink .next {
+          margin-bottom: 50px; } }
+      @media (max-width: 400px) {
+        main .nextLink .next {
+          margin-bottom: 100px; } }
       main .nextLink .next:hover {
         background-color: black;
         color: white; }
   main #map {
     width: 100%;
     height: 250px; }
+  @media (max-width: 800px) {
+    main .third {
+      width: 100% !important;
+      margin-right: 0; } }

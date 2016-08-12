@@ -1,5 +1,5 @@
 $(document).on('ready', function() {
-  
+
   $('.payment').on('click', '.stripe-button-el', function () {
     var interval = setInterval(auto_load, 1000);
   });
@@ -31,8 +31,6 @@ progressNumber = progressNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 $('#progressText').text(progressNumber);
 
 $('#progressGoal').text(GOAL.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
-
-console.log('goal', Math.round(GOAL));
 
 function auto_load() {
   $.ajax({

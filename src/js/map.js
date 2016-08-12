@@ -25,6 +25,11 @@ $('html, body').on('click', function(e) {
   $('#map').slideUp('fast');
 })
 
+// establishMap
+
+// empty #map
+// re-run establishMap
+
 jQuery(document).ready(function($) {
   /*
    *  render_map

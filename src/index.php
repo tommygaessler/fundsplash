@@ -7,7 +7,7 @@
         <p class="credits">Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="http://tommygaessler.com" target="_blank">Tommy Gaessler</a>,<br>using the <a href="http://unsplash.com" target="_blank">Unsplash</a> and <a href="http://stripe.com/" target="_blank">Stripe</a> API's</p>
       </div>
       <div class="loader">
-        <h1 class="loading">Loading Next Campaign... </h1>
+        <h1 class="loading">Loading<span class="show">...</span><span class="hide"> Next Campaign...<span></h1>
       </div>
     </div>
     <main>
@@ -27,6 +27,7 @@
             <!-- <p>Total Photos: <span id="totalPhotos">10</span></p> -->
 
             <p class="bio">Bio: <span id="bio">Shoreditch mixtape literally you probably haven't heard of them beard, narwhal vinyl. Raw denim mlkshk freegan synth, vice bushwick pug bespoke. Chartreuse tacos vinyl, authentic normcore pour-over cardigan bitters flexitarian pop-up.</span></p>
+
           </div>
           <div class="column third space payment">
             <?php require_once('./config.php'); ?>
@@ -52,22 +53,22 @@
           </div>
         </div>
       </div>
-      <div id="map" class="mapDiv">
+      <div id="map" class="mapDiv mapHide">
         <div class="marker" data-lat="" data-lng="" itemprop="map"></div>
       </div>
       <div class="wrapper">
         <div class="row photos">
           <div class="column third">
-            <img id="photo0" src="images/building.jpg" alt="" />
-            <img id="photo1" src="images/fire.jpg" alt="" />
+            <img id="photo0" src="images/placeholder.png" alt="" />
+            <img id="photo1" src="images/placeholder.png" alt="" />
           </div>
           <div class="column third">
-            <img id="photo2" src="images/space.jpg" alt="" />
-            <img id="photo3" src="images/wall.jpg" alt="" />
+            <img id="photo2" src="images/placeholder.png" alt="" />
+            <img id="photo3" src="images/placeholder.png" alt="" />
           </div>
           <div class="column third">
-            <img id="photo4" src="images/water.jpg" alt="" />
-            <img id="photo5" src="images/wheel.jpg" alt="" />
+            <img id="photo4" src="images/placeholder.png" alt="" />
+            <img id="photo5" src="images/placeholder.png" alt="" />
           </div>
         </div>
       </div>

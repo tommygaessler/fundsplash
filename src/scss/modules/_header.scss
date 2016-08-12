@@ -12,16 +12,35 @@ header {
     text-align: center;
     position: relative;
 
-    img {
+    img:not(.profilepicture) {
       width: 37px;
       vertical-align: bottom;
+
+      @include breakpoint(phone) {
+        position: absolute;
+        top: 0;
+        left: 23px;
+      }
     }
+
+    .fa-usd {
+      @include breakpoint(phone) {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+
+
 
     .profilepicture {
       position: absolute;
       top: 0;
       right: 0;
       border-radius: 50%;
+      width: 37px;
+      vertical-align: bottom;
     }
 
     h2 {
@@ -29,6 +48,11 @@ header {
       top: 0;
       left: 0;
       margin: 0;
+
+      @include breakpoint(phone) {
+        text-align: center;
+        position: relative;
+      }
 
       a {
         color: black;

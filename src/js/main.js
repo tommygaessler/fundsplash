@@ -9,6 +9,7 @@ $(document).on('ready', function () {
     $('#target').remove();
     $('main').css('display', 'none');
     $('.loader').css('display', 'block');
+    locationReset()
     unsplashLoad()
     .then(function() {
       $('.loader').css('display', 'none');
