@@ -4,6 +4,10 @@
         <h1>Fundsplash</h1>
         <p>Fundsplash is a crowdfunding website where <a href="http://unsplash.com" target="_blank">Unsplash</a> photographers can raise money for their next adventure!</p>
         <button class="startbutton" id="start">Browse Campaigns</button>
+        <div class="social">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out Tommy's @galvanize Q1 Project!" data-via="tommygaessler" data-hashtags="unsplash">Tweet</a>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Ffundsplash.com&layout=button&size=small&mobile_iframe=true&appId=1356967117665542&width=59&height=20" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
         <p class="credits">Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="http://tommygaessler.com" target="_blank">Tommy Gaessler</a>,<br>using the <a href="http://unsplash.com" target="_blank">Unsplash</a> and <a href="http://stripe.com/" target="_blank">Stripe</a> API's</p>
       </div>
       <div class="loader">

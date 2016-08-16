@@ -1,4 +1,5 @@
 $(document).on('ready', function () {
+
   $('#start').on('click', function () {
     $('main').fadeIn('slow');
     $('main').css('display', 'block');
@@ -15,8 +16,6 @@ $(document).on('ready', function () {
     window.newLocation = setLatLng(allLocations);
 
     $('#map').empty().append('<div class="marker" data-lat="' + newLocation.lat + '" data-lng="' + newLocation.long + '" itemprop="map"></div>');
-
-
 
     initializeMap($);
 

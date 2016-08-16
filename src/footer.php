@@ -1,11 +1,10 @@
     <footer>
 
     </footer>
+    <!-- Twitter -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     <!-- Google Maps -->
-
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyA55ffaQ1IVB7Th8aKlEfWGOmscYBplLuA">
-
-    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyA55ffaQ1IVB7Th8aKlEfWGOmscYBplLuA"></script>
     <!-- Stripe -->
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <!-- jQuery -->

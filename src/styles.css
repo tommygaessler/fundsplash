@@ -277,6 +277,9 @@ header {
   .startWrapper .start {
     position: relative;
     top: 162px; }
+    .startWrapper .start .social {
+      margin-top: 20px;
+      text-align: center; }
     .startWrapper .start .credits {
       position: fixed;
       bottom: 20px;
