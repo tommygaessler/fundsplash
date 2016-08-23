@@ -32,7 +32,7 @@
     <meta property="og:title" content="Fundsplash - Beta" />
     <meta property="og:description" content="Fundsplash is a crowdfunding website where Unsplash photographers can raise money for their next adventure!" />
     <meta property="og:image" content="http://fundsplash.com/images/fundsplashcard.png" />
-    <meta property="og:site_name" content="fundsplash.com" />
+    <meta property="og:site_name" content="Fundsplash" />
   </head>
   <body>
     <header>
