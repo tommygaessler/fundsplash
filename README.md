@@ -45,4 +45,4 @@ In **return,** the **photographers** will **share** their **incredible** **new**
 
 > The user will be able to use a suggested donation, a custom donation, or pass on the donation and load another account to possibly fund.
 
-*With my app, there will **always** be enough **new**, **free**, **beautiful** [Unsplash](https://unsplash.com) **photography** to **use**, or just **enjoy!***
+With my app, there will **always** be enough **new**, **free**, **beautiful** [Unsplash](https://unsplash.com) **photography** to **use**, or just **enjoy!**
