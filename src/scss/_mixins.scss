@@ -32,19 +32,6 @@ $breakpoints: (
     }
 }
 
-// -------------- Background Images -------------- //
-@mixin background-image($behavior: fixed) {
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: $behavior !important;
-
-    // Attachment scroll on mobile and unsupported browsers
-    html.touch & {
-        background-attachment: scroll !important;
-    }
-}
-
 // -------------- Transition/Ease -------------- //
 @mixin ease($time:333ms, $el: all, $anim: ease-in-out) {
     transition: $el $time $anim;
