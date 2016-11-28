@@ -27,6 +27,21 @@ var allLocations = [{
   place: 'Telluride, CO',
   lat: '37.938013',
   long: '-107.811902'
+},
+{
+  place: 'Bangkok, Thailand',
+  lat: '13.760460',
+  long: '100.487493'
+},
+{
+  place: 'Jerusalem, Israel',
+  lat: '31.767115',
+  long: '35.209002'
+},
+{
+  place: 'Prague, Czech Republic',
+  lat: '50.075893',
+  long: '14.423730'
 }
 ];
 
