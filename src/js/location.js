@@ -42,7 +42,27 @@ var allLocations = [{
   place: 'Prague, Czech Republic',
   lat: '50.075893',
   long: '14.423730'
-}
+},
+// {
+//   place: 'Prague, Czech Republic',
+//   lat: '50.075893',
+//   long: '14.423730'
+// },
+// {
+//   place: 'Prague, Czech Republic',
+//   lat: '50.075893',
+//   long: '14.423730'
+// },
+// {
+//   place: 'Prague, Czech Republic',
+//   lat: '50.075893',
+//   long: '14.423730'
+// },
+// {
+//   place: 'Prague, Czech Republic',
+//   lat: '50.075893',
+//   long: '14.423730'
+// }
 ];
 
 function setLatLng (locations) {
