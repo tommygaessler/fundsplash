@@ -55,8 +55,8 @@ gulp.task('watch', function() {
 // *** defailt task *** //
 gulp.task('default', function() {
   runSequence(
-    ['jshint'],
-    ['style'],
+    // ['jshint'],
+    // ['style'],
     ['watch'],
     ['connect']
   );

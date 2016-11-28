@@ -6,7 +6,7 @@
 
     <!-- styles -->
 
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="icon" href="/images/logo.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
