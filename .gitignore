@@ -10,3 +10,4 @@ composer.lock
 config.codekit
 config.php
 .sass-cache/
+npm-debug.log

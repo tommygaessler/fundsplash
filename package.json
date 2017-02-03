@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "",
   "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
