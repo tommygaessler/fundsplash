@@ -1,5 +1,7 @@
 $(document).on('ready', function () {
 
+  console.log('Hi');
+
   $('#start').on('click', function () {
     $('main').fadeIn('slow');
     $('main').css('display', 'block');
