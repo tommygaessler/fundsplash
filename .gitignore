@@ -2,6 +2,7 @@ node_modules/
 .DS_Store
 .jscsrc
 .jshintrc
+vendor/
 config.codekit
 config.php
 .sass-cache/
