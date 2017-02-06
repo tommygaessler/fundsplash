@@ -4,6 +4,5 @@ node_modules/
 .jshintrc
 vendor/
 config.codekit
-config.php
 .sass-cache/
 npm-debug.log
