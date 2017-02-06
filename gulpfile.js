@@ -11,45 +11,45 @@ var runSequence = require('run-sequence');
 
 gulp.task('connect', function () {
   connect.server({
-    base: './src/',
+    base: './',
     port: 8888,
     livereload: true
   });
 });
 
 gulp.task('html', function () {
-  gulp.src('./src/*.html')
+  gulp.src('./*.html')
     .pipe(connect.reload());
 });
 
 gulp.task('css', function () {
-  gulp.src('./src/css/*.css')
+  gulp.src('./css/*.css')
     .pipe(connect.reload());
 });
 
 gulp.task('javascript', function () {
-  gulp.src('./src/**/*.js')
+  gulp.src('./**/*.js')
     .pipe(connect.reload());
 });
 
 gulp.task('jshint', function() {
-  return gulp.src('./src/**/*.js')
+  return gulp.src('./**/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'))
     .pipe(jshint.reporter('fail'));
 });
 
 gulp.task('style', function() {
-  return gulp.src('src/**/*.js')
+  return gulp.src('**/*.js')
     .pipe(jscs())
     .pipe(jscs.reporter())
     .pipe(jscs.reporter('fail'));
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./src/js/*.js', ['jshint', 'javascript', 'style']);
-  gulp.watch(['./src/*.html'], ['html']);
-  gulp.watch(['./src/css/*.css'], ['css']);
+  gulp.watch('./js/*.js', ['jshint', 'javascript', 'style']);
+  gulp.watch(['./*.html'], ['html']);
+  gulp.watch(['./css/*.css'], ['css']);
 });
 
 // *** defailt task *** //
