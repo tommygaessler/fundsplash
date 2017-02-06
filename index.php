@@ -1,4 +1,4 @@
-    <?php include 'header.php'; ?>
+    <?php include('header.php'); ?>
     <div class="startWrapper">
       <div class="start">
         <h1>Fundsplash</h1>
@@ -78,4 +78,4 @@
       </div>
       <a class="nextLink" href="#"><button class="next" id="next">Next Campaign</button></a>
     </main>
-    <?php include 'footer.php'; ?>
+    <?php include('footer.php'); ?>
